@@ -2,6 +2,9 @@
 
 %%wp_project_description%%
 
+### First clone
+
+Run `make start` to download go modules and regenerate protobufs.
 
 ### Local testing
 

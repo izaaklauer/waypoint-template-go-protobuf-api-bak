@@ -1,5 +1,6 @@
+# When you first clone the repo, start here!
 .PHONY: start
-start: # When you first clone the repo, start here!
+start: proto/generate 
 	go mod tidy
 
 .PHONY: serve
