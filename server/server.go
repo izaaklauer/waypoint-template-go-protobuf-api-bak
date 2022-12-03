@@ -1,17 +1,17 @@
 package server
 
 import (
+	"context"
 	"log"
 
 	%%wp_project%%v1 "github.com/izaaklauer/%%wp_project%%/gen/proto/go/%%wp_project%%/v1"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
-type
-%%Wp_project%%Server struct {
-%%wp_project%%v1.Unimplemented%%Wp_project%%ServiceServer
+type %%Wp_project%%Server struct {
+	%%wp_project%%v1.Unimplemented%%Wp_project%%ServiceServer
 
-config config.%%Wp_project%%
+	config config.%%Wp_project%%
 }
 
 // New%%Wp_project%%Server initializes a new server from config
@@ -26,8 +26,8 @@ func New%%Wp_project%%Server(config config.%%Wp_project%%) (*%%Wp_project%%Serve
 }
 
 func (s * %%Wp_project%%Server) HelloWorld(
-ctx context.Context,
-req *%%wp_project%%v1.HelloWorldRequest,
+	ctx context.Context,
+	req *%%wp_project%%v1.HelloWorldRequest,
 ) (*%%wp_project%%v1.HelloWorldResponse, error) {
 	log.Printf("HelloWorld request with message %q", req.Message)
 
