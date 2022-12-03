@@ -42,7 +42,7 @@ func serve() error {
 	}
 
 	// Start the service
-	%%wp_project%%Server, err := server.New % % Wp_project % % Server(c. % % Wp_project % %)
+	%%wp_project%%Server, err := server.New%%Wp_project%%Server(c.%%Wp_project%%)
 	if err != nil {
 		return errors.Wrapf(err, "failed to start %%wp_project%% server")
 	}
@@ -53,7 +53,7 @@ func serve() error {
 	}
 	grpcServer := grpc.NewServer()
 
-	%%wp_project%%v1.Register % % Wp_project % % ServiceServer(grpcServer, %%wp_project%%Server)
+	%%wp_project%%v1.Register%%Wp_project%% ServiceServer(grpcServer, %%wp_project%%Server)
 	reflection.Register(grpcServer)
 
 	log.Printf("Serving on %q", c.Server.BindAddr)
