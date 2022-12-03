@@ -18,7 +18,7 @@ config config.%%Wp_project%%
 func New%%Wp_project%%Server(config config.%%Wp_project%%) (*%%Wp_project%%Server, error) {
 	// Server-specific initialization, like DB clients, goes here.
 
-	server := %%Wp_project % % Server{
+	server := %%Wp_project%%Server{
 		config: config,
 	}
 

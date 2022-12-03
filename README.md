@@ -1,6 +1,6 @@
 # %%wp_project%%
 
-description
+%%wp_project_description%%
 
 
 ### Local testing
