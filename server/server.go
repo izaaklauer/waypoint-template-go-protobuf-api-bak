@@ -4,6 +4,7 @@ import (
 	"context"
 	"log"
 
+        "github.com/izaaklauer/%%wp_project%%/config"
 	%%wp_project%%v1 "github.com/izaaklauer/%%wp_project%%/gen/proto/go/%%wp_project%%/v1"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
