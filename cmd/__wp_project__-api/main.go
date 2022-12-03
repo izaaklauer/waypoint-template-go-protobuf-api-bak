@@ -53,7 +53,7 @@ func serve() error {
 	}
 	grpcServer := grpc.NewServer()
 
-	%%wp_project%%v1.Register%%Wp_project%% ServiceServer(grpcServer, %%wp_project%%Server)
+	%%wp_project%%v1.Register%%Wp_project%%ServiceServer(grpcServer, %%wp_project%%Server)
 	reflection.Register(grpcServer)
 
 	log.Printf("Serving on %q", c.Server.BindAddr)
